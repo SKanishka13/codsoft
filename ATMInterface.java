@@ -15,6 +15,7 @@ class ATM {
     }
 
     public void run(){
+         Scanner sc= new Scanner(System.in);
         while (true) {
             System.out.println("\n ATM menu: ");
             System.out.println("1. Check Balance");
@@ -22,7 +23,7 @@ class ATM {
             System.out.println("3. Withdraw");
             System.out.println("4. Exit");
              
-            Scanner sc= new Scanner(System.in);
+           
             int choice= sc.nextInt();
             switch (choice) {
                 case 1:
@@ -46,7 +47,6 @@ class ATM {
                     System.out.println("Invalid choice. please try again.");
                     break;
             }
-            sc.close();
         }
     }
 }
